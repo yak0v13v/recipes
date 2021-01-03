@@ -1,0 +1,13 @@
+.container {
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 2em;
+    color: #1460e3;
+}
