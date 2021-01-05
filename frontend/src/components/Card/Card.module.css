@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 1vw;
+    margin-bottom: 1vw;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #fbfbfb;
+}
+
+.card > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 10vw;
+    border-radius: 5px 0 0 5px;
+}
+
+.card span {
+    margin-left: 11vw;
+}
+
+.edit {
+    display: flex;
+}
+
+.edit img {
+    margin-left: 1vw;
+    height: 1.5vw;
+    cursor: pointer;
+}

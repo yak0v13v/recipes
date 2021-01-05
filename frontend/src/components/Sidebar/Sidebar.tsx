@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Styles from './Sidebar.module.css';
 
 type Props = {
@@ -13,7 +13,7 @@ export const Sidebar: React.FC<Props> = ({links}) => {
     return (
         <nav className={Styles.container}>
             {links.map((item, i)=>(
-                <Link key={i} className={Styles.link} to={item.link}>{item.name}</Link>
+                <NavLink key={i} className={Styles.link} to={item.link} activeClassName={Styles.activeLink}>{item.name}</NavLink>
             ))}
         </nav>
     )
