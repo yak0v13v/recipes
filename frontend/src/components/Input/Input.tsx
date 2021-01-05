@@ -1,4 +1,4 @@
-import React, {ChangeEvent, SyntheticEvent} from 'react';
+import React, {ChangeEvent} from 'react';
 import Styles from './Input.module.css';
 
 type Props = {
