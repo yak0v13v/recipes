@@ -5,7 +5,7 @@ import Styles from './AdminPage.module.css';
 const data = [
     {
         name: 'Рецепты',
-        link: '/'
+        link: '/admin/recipes'
     },
     {
         name: 'Добавить рецепт',
