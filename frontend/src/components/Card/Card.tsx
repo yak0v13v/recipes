@@ -15,7 +15,7 @@ type Props = {
 export const Card: React.FC<Props> = ({img, title, canDelete, onClickDelete, canEdit, onClickEdit}) => {
     return(
         <div className={Styles.card}>
-            <img src={img} alt={title}/>
+            {img && <img src={img} alt={title}/>}
             <span>{title}</span>
             <div className={Styles.edit}>
                 {canEdit && <img src={editIcon} alt="edit" onClick={onClickEdit}/>}

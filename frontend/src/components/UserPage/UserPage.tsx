@@ -9,7 +9,7 @@ const data = [
     },
     {
         name: 'Категории',
-        link: '/'
+        link: '/user/categories'
     }
 ]
 
