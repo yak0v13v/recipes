@@ -18,6 +18,10 @@ const data = [
     {
         name: 'Добавить категорию',
         link: '/admin/categories/add'
+    },
+    {
+        name: 'Пользователи',
+        link: '/admin/users'
     }
 ]
 

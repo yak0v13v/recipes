@@ -16,6 +16,8 @@ import {AdminCategories} from "./pages/AdminCategories/AdminCategories";
 import {UserCategories} from "./pages/UserCategories/UserCategories";
 import {EditCategory} from "./pages/EditCategories/EditCategories";
 import {AddCategory} from "./pages/AddCategory/AddCategory";
+import {Users} from "./pages/Users/Users";
+import {UserUsers} from "./pages/UserUsers/UserUsers";
 
 function App() {
   return (
@@ -31,8 +33,10 @@ function App() {
             <Route path="/admin/categories" component={AdminCategories} exact/>
             <Route path="/admin/categories/edit/:id" component={EditCategory} />
             <Route path="/admin/categories/add" component={AddCategory} />
+            <Route path="/admin/users" component={Users} />
             <Route path="/user/recipes" component={UserRecipes} exact/>
             <Route path="/user/categories" component={UserCategories} exact/>
+            <Route path="/user/users" component={UserUsers} />
         </Switch>
       </Router>
     </div>

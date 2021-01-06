@@ -21,3 +21,5 @@ export const getCategory = (id: string | number) => axios.get(`/categories/${id}
 export const updateCategory = (id: string | number, data: any) => axios.post(`/categories/${id}`, data);
 
 export const addCategory = (data: any) => axios.put('/categories', data);
+
+export const getUsers = () => axios.get('/users');

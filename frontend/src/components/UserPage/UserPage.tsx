@@ -10,6 +10,10 @@ const data = [
     {
         name: 'Категории',
         link: '/user/categories'
+    },
+    {
+        name: 'Пользователи',
+        link: '/user/users'
     }
 ]
 
