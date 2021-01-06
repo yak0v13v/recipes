@@ -14,6 +14,7 @@ import {AddRecipe} from "./pages/AddRecipe/AddRecipe";
 import {UserRecipes} from "./pages/UserRecipes/UserRecipes";
 import {AdminCategories} from "./pages/AdminCategories/AdminCategories";
 import {UserCategories} from "./pages/UserCategories/UserCategories";
+import {EditCategory} from "./pages/EditCategories/EditCategories";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/admin/recipes/edit/:id" component={EditRecipe} />
             <Route path="/admin/recipes/add" component={AddRecipe} />
             <Route path="/admin/categories" component={AdminCategories} exact/>
+            <Route path="/admin/categories/edit/:id" component={EditCategory} />
             <Route path="/user/recipes" component={UserRecipes} exact/>
             <Route path="/user/categories" component={UserCategories} exact/>
         </Switch>

@@ -15,3 +15,8 @@ export const addRecipe = (data: any) => axios.put('/recipes', data);
 export const getCategories = () => axios.get('/categories');
 
 export const deleteCategory = (id: number) => axios.delete(`/categories/${id}`);
+
+export const getCategory = (id: string | number) => axios.get(`/categories/${id}`);
+
+export const updateCategory = (id: string | number, data: any) => axios.post(`/categories/${id}`, data);
+
