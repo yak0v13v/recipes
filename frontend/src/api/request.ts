@@ -1,6 +1,8 @@
 import Axios from 'axios';
 
-const axios = Axios.create({baseURL: 'http://localhost:3000/api/v1'});
+export const BASE_URL = 'http://localhost:3000/api/v1';
+
+const axios = Axios.create({baseURL: BASE_URL});
 
 export const getRecipes = () => axios.get('/recipes');
 
@@ -23,3 +25,7 @@ export const updateCategory = (id: string | number, data: any) => axios.post(`/c
 export const addCategory = (data: any) => axios.put('/categories', data);
 
 export const getUsers = () => axios.get('/users');
+
+export const getSql = () => axios.get('/sql');
+
+export const getLogin = () => axios.get('/login');

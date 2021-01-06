@@ -17,4 +17,20 @@ router.get('/api/v1/users', async function(req, res, next) {
   }
 });
 
+router.get('/api/v1/login', (req, res)=>{
+  res.status(200).json({status: 'success'});
+})
+
+router.get('/api/v1/sql', (req, res)=>{
+  const options = {
+    root: __dirname,
+    dotfiles: 'deny',
+    headers: {
+      'Content-Type': 'application/octet-stream',
+      'Content-Disposition': 'attachment; filename="migrationUp.sql"',
+    }
+  }
+  res.status(200).sendFile('/migrationUp.sql', options);
+})
+
 module.exports = router;
