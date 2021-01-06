@@ -10,6 +10,7 @@ import {Admin} from "./pages/Admin/Admin";
 import {User} from "./pages/User/User";
 import {Recipes} from "./pages/Recipes/Recipes";
 import {EditRecipe} from "./pages/EditRecipe/EditRecipe";
+import {AddRecipe} from "./pages/AddRecipe/AddRecipe";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/user" component={User} exact/>
             <Route path="/admin/recipes" component={Recipes} exact/>
             <Route path="/admin/recipes/edit/:id" component={EditRecipe} />
+            <Route path="/admin/recipes/add" component={AddRecipe} />
         </Switch>
       </Router>
     </div>

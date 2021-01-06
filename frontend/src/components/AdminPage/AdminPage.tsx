@@ -9,7 +9,7 @@ const data = [
     },
     {
         name: 'Добавить рецепт',
-        link: '/'
+        link: '/admin/recipes/add'
     },
     {
         name: 'Категории',
