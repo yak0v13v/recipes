@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Рецепты</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #c75579 0%, #3586a0 100%);
+            color: #ffffff;
+            text-align: center;
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 3vw;
+        }
+
+        .title {
+            margin: 1em 0;
+            font-weight: 600;
+        }
+
+        .block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+
+        .h1 {
+            font-size: 0.5em;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+
+        .text {
+            max-width: 70vw;
+            font-size: 0.3em;
+            text-align: center;
+        }
+
+        a {
+            color: greenyellow;
+        }
+
+        iframe {
+            margin-bottom: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Рецепты</div>
+    <div class="block">
+        <div class="h1">Проблема</div>
+        <div class="text">1) Нужно сдать инженерное проектирование</div>
+        <div class="text">2) У большинства сайтов с рецептами устаревший дизайн, нет калорийности блюда, изображения плохого качества, которые не иллюстрируют процесс готовки в полной степени. На всех сайтах присутствует название, описание блюда, изображение, шаги готовки. </div>
+    </div>
+
+    <div class="block">
+        <div class="h1">Используемые технологии</div>
+        <div class="text">Backend: ExpressJS(Node.JS), PostgreSQL.</div>
+        <div class="text">Frontend: React, Typescript, CSS Modules.</div>
+    </div>
+
+    <div class="block">
+        <div class="h1">Разработал</div>
+        <div class="text">Яковлев Артем 171-332</div>
+    </div>
+
+    <div class="block">
+        <div class="h1">Результаты</div>
+        <div class="text">Frontend: <a href="http://recipes.std-228.ist.mospolytech.ru/" target="_blank" rel="noreferrer">http://recipes.std-228.ist.mospolytech.ru/</a></div>
+        <div class="text">API: <a href="http://api.std-228.ist.mospolytech.ru/" target="_blank" rel="noreferrer">http://api.std-228.ist.mospolytech.ru/</a></div>
+        <div class="text">Postman: <a href="https://www.getpostman.com/collections/8c1ded5c83dbd8766366" target="_blank" rel="noreferrer">https://www.getpostman.com/collections/8c1ded5c83dbd8766366</a></div>
+    </div>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mKdpLyarFnE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://app.pitch.com/app/embed/2833dbba-021f-4b06-8b8f-dc163bf04f98" allow="fullscreen" allowfullscreen="" width="560" height="315" style="border:0"></iframe>
+</body>
+</html>

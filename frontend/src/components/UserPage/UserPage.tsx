@@ -14,6 +14,10 @@ const data = [
     {
         name: 'Пользователи',
         link: '/user/users'
+    },
+    {
+        name: 'Выйти',
+        link: '/'
     }
 ]
 

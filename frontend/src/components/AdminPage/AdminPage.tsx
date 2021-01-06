@@ -22,6 +22,10 @@ const data = [
     {
         name: 'Пользователи',
         link: '/admin/users'
+    },
+    {
+        name: 'Выйти',
+        link: '/'
     }
 ]
 

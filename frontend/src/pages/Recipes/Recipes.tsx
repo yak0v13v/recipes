@@ -7,6 +7,8 @@ import {useHistory} from 'react-router-dom';
 
 export const Recipes: React.FC = () => {
     const [data, setData] = useState<any>();
+    const [idOrder, setIdOrder] = useState(false);
+    const [alp, setAlp] = useState(false);
     const history = useHistory();
 
     useEffect(()=>{
@@ -38,7 +40,30 @@ export const Recipes: React.FC = () => {
 
     return(
         <AdminPage>
-            {data && data.map((item: any, i: number)=>(
+            <div className={Styles.filters}>
+                <b>Сортировать:</b> <button onClick={()=>{
+                    setIdOrder(!idOrder);
+                }}>по возрастанию id</button>
+            </div>
+            <div className={Styles.filters}>
+                <b>Фильтр:</b> <button onClick={()=>{
+                setAlp(!alp)
+            }}>только напитки</button>
+            </div>
+            {data && data.sort((a:any, b: any)=>{
+                if(idOrder){
+                    return a.id - b.id
+                }
+
+                return true;
+
+            }).filter((item: any)=>{
+                if(alp) {
+                    return item.category_id === 2;
+                }
+
+                return true
+            }).map((item: any, i: number)=>(
                 <Card key={i}
                       img={item.img}
                       title={item.title}
