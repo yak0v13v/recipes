@@ -1,7 +1,8 @@
 import React from 'react';
+import {UserPage} from "../../components/UserPage/UserPage";
 
 export const User: React.FC = () => {
     return(
-        <div>User</div>
+        <UserPage>User</UserPage>
     )
 }

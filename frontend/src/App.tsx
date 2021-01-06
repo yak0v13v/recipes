@@ -11,6 +11,7 @@ import {User} from "./pages/User/User";
 import {Recipes} from "./pages/Recipes/Recipes";
 import {EditRecipe} from "./pages/EditRecipe/EditRecipe";
 import {AddRecipe} from "./pages/AddRecipe/AddRecipe";
+import {UserRecipes} from "./pages/UserRecipes/UserRecipes";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/admin/recipes" component={Recipes} exact/>
             <Route path="/admin/recipes/edit/:id" component={EditRecipe} />
             <Route path="/admin/recipes/add" component={AddRecipe} />
+            <Route path="/user/recipes" component={UserRecipes} exact/>
         </Switch>
       </Router>
     </div>
