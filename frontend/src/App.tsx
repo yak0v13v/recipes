@@ -15,6 +15,7 @@ import {UserRecipes} from "./pages/UserRecipes/UserRecipes";
 import {AdminCategories} from "./pages/AdminCategories/AdminCategories";
 import {UserCategories} from "./pages/UserCategories/UserCategories";
 import {EditCategory} from "./pages/EditCategories/EditCategories";
+import {AddCategory} from "./pages/AddCategory/AddCategory";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="/admin/recipes/add" component={AddRecipe} />
             <Route path="/admin/categories" component={AdminCategories} exact/>
             <Route path="/admin/categories/edit/:id" component={EditCategory} />
+            <Route path="/admin/categories/add" component={AddCategory} />
             <Route path="/user/recipes" component={UserRecipes} exact/>
             <Route path="/user/categories" component={UserCategories} exact/>
         </Switch>

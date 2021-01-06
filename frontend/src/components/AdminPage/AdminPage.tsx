@@ -17,7 +17,7 @@ const data = [
     },
     {
         name: 'Добавить категорию',
-        link: '/'
+        link: '/admin/categories/add'
     }
 ]
 
